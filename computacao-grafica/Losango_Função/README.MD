@@ -45,6 +45,7 @@ Chama a função losango(res) para desenhar a figura.
 
 ```bash
 Digite o tamanho do losango: 4
+
    *
   ***
  *****
@@ -82,3 +83,4 @@ Console/terminal compatível com saída de texto padrão
 
 Desenvolvido por Lanna Maria
 📘 Projeto Acadêmico em linguagem C para a disciplina da computação gráfica — Estruturas de repetição e formatação de saída.
+
