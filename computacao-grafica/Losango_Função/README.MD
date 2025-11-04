@@ -2,6 +2,8 @@
 
 Este programa em C desenha um losango (*) no terminal com base em um tamanho informado pelo usuário. Ele utiliza laços de repetição para construir as metades superior e inferior da figura, de forma simétrica e centralizada.
 
+---
+
 🧠 Descrição do Programa
 
 O programa solicita ao usuário o tamanho do losango (um número inteiro positivo) e, em seguida, imprime o losango correspondente utilizando asteriscos *.
@@ -13,6 +15,8 @@ Gerar a metade superior do losango (do topo até o meio).
 Gerar a metade inferior (do meio até a base).
 
 Alinhar corretamente os espaços e os asteriscos para formar a figura centralizada.
+
+---
 
 ⚙️ Estrutura do Código
 Funções
@@ -41,6 +45,8 @@ Solicita ao usuário o tamanho do losango.
 
 Chama a função losango(res) para desenhar a figura.
 
+---
+
 💻 Exemplo de Execução
 
 ```bash
@@ -56,15 +62,18 @@ Digite o tamanho do losango: 4
 
 ```
 
+---
+
 🧩 Como Compilar e Executar
 No Linux ou macOS:
-
 
 ```bash
 gcc losango.c -o losango
 ./losango
 
 ```
+
+---
 
 No Windows (com MinGW):
 
@@ -73,14 +82,19 @@ gcc losango.c -o losango.exe
 losango.exe
 ```
 
+---
+
 📄 Requisitos
 
 Compilador C (como GCC ou Clang)
 
 Console/terminal compatível com saída de texto padrão
 
-✨ Autor
+---
+
+✨ Autora
 
 Desenvolvido por Lanna Maria
 📘 Projeto Acadêmico em linguagem C para a disciplina da computação gráfica — Estruturas de repetição e formatação de saída.
+
 
