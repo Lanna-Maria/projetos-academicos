@@ -1,81 +1,74 @@
-# 🖥️ Disciplina: Computação Gráfica
+# 🖥️ Computação Gráfica
 
-Repositório dedicado aos exercícios e projetos realizados na disciplina de **Computação Gráfica**, durante o curso de **Bacharelado em Ciência da Computação** do **Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE) – Campus Tianguá**.
-
----
-
-## 🎯 Objetivo da Disciplina
-
-Introduzir os princípios fundamentais da Computação Gráfica, abordando desde a representação e transformação de primitivas geométricas até a utilização de bibliotecas gráficas para construção visual de aplicações interativas.
+> Exercícios, atividades práticas e projeto final desenvolvidos na disciplina de **Computação Gráfica**, durante o curso de **Bacharelado em Ciência da Computação – IFCE Tianguá**.
 
 ---
 
-## 📚 Conteúdos Abordados
+## 🎓 Sobre a Disciplina
 
-Ao longo da disciplina foram explorados tópicos como:
+A disciplina de Computação Gráfica aborda os fundamentos teóricos e práticos da geração, manipulação e exibição de imagens por computador.  
+O foco está na representação de objetos geométricos, transformações, interatividade e uso de bibliotecas gráficas.
 
-- Transformações geométricas
-- Rasterização de primitivas
-- Algoritmos de recorte
-- Modelos de cores
-- Pipeline gráfico
-- Gráficos vetoriais
-- Interatividade e animação
-- OpenGL e renderização 2D
+Os conteúdos envolvem:
 
----
-
-## 📁 Trabalhos Desenvolvidos
-
-Este repositório contém duas atividades principais, cada uma explorando aspectos específicos da disciplina:
-
-### 🔹 **1. Gerador de Losango (C)**
-Exercício introdutório utilizando **estruturas de repetição** em C para geração de formas geométricas via saída de terminal.
-
-📎 **Conceitos envolvidos:**
-- Estruturas de repetição
-- Formatação de saída
-- Representação de primitivas geométricas em ASCII
-
-📁 Pasta: `atividade-losango/`
+✔ Primitivas gráficas e rasterização  
+✔ Transformações geométricas  
+✔ Pipeline gráfico  
+✔ Modelos de cor e renderização  
+✔ Uso do OpenGL em aplicações 2D  
+✔ Interação e eventos  
+✔ Animação e lógica de jogo  
 
 ---
 
-### 🎮 **2. Projeto Final — Jogo Asteroids 2D (OpenGL)**
+## 🧩 Estrutura da Pasta
 
-Implementação de um clone simplificado do clássico **Asteroids**, integrando conceitos de gráficos 2D, vetores, animação e interação.
-
-👥 **Equipe:**
-- Antonio Rafael  
-- Lanna Maria  
-- Maria Lauriane  
-- Pâmela Roberto  
-
-📎 **Conceitos envolvidos:**
-- OpenGL (2D)
-- Transformações geométricas
-- Desenho de primitivas
-- Eventos e controles
-- Renderização interativa
-
-📁 Pasta: `asteroids/`
+| Pasta | Conteúdo | Nível |
+|---|---|---|
+| **Losango** | Impressão de forma geométrica via terminal utilizando C | 🌱 Básico |
+| **Asteroids** | Implementação parcial do jogo Asteroids em OpenGL | 🌿 Intermediário |
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## 📁 Subpastas
+
+🔹 [`Losango`](./losango)  
+> Exercício introdutório para trabalhar repetição, estruturação e representação geométrica via console.
+
+🔹 [`Asteroids`](./asteroids)  
+> Projeto final da disciplina utilizando **OpenGL**, com exibição de primitivas vetoriais e controle interativo da nave.
+
+---
+
+## 🧠 Competências Desenvolvidas
+
+📌 Raciocínio geométrico aplicado  
+📌 Representação gráfica 2D  
+📌 Noções de renderização vetorial  
+📌 Tratamento de eventos e interatividade  
+📌 Uso prático do OpenGL  
+📌 Desenvolvimento de lógica e animação simples  
+
+---
+
+## 🛠️ Tecnologias e Bibliotecas Utilizadas
 
 - C
 - OpenGL
-- GLUT / FreeGLUT (dependendo da implementação)
-- Console (para tarefas iniciais)
+- GLUT / FreeGLUT
+- Terminal (para os exercícios iniciais)
 
 ---
 
-## 🎓 Finalidade Acadêmica
+## 🎯 Objetivo Pedagógico
 
-Este repositório possui **propósito exclusivamente acadêmico**, compondo parte das atividades avaliativas da disciplina de Computação Gráfica.
+✔ Desenvolver visão computacional para objetos geométricos  
+✔ Relacionar teoria visual à prática computacional  
+✔ Criar aplicações gráficas simples e interativas  
+✔ Estimular lógica e criatividade em ambiente gráfico  
 
 ---
 
-🟩 Desenvolvido por **Lanna Maria** — IFCE Tianguá 
+## 📎 Observação
 
+Material disponibilizado **para fins acadêmicos**, com foco didático e exploratório.  
