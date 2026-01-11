@@ -6,11 +6,11 @@
 
 ## 🏫 Sobre o Curso
 
-**Instituição:** Instituto Federal de Educação, Ciência e Tecnologia do Ceará – IFCE  
-**Campus:** Tianguá  
-**Modalidade:** Presencial  
-**Curso:** Bacharelado em Ciência da Computação
-**Período:** 2021/2025
+> **Instituição:** IFCE – Instituto Federal do Ceará  
+> **Campus:** Tianguá  
+> **Modalidade:** Presencial  
+> **Curso:** Bacharelado em Ciência da Computação  
+> **Período:** 2021/2025
 
 ---
 
