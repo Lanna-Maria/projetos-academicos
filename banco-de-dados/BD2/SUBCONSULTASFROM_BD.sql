@@ -1,0 +1,58 @@
+﻿use SistemaAcademicoBCC
+
+→ Obter a média da quantidade de disciplinas dos cursos.
+
+SELECT AVG(QTDE)
+FROM 
+(SELECT CUR_NOME ,COUNT (*) AS QTDE
+FROM tbCurso AS C JOIN tbDisciplina AS D
+ON C.CUR_CODIGO = D.CUR_CODIGO
+GROUP BY CUR_NOME) AS T
+
+POR MEIO DE UMA VISÃO FICA:  
+
+CREATE VIEW VWQTDE
+AS
+SELECT CUR_NOME ,COUNT (*) AS QTDE
+FROM tbCurso AS C JOIN tbDisciplina AS D
+ON C.CUR_CODIGO = D.CUR_CODIGO
+GROUP BY CUR_NOME
+
+SELECT AVG(QTDE)
+FROM VWQTDE
+
+
+→ A lotação de carga horária dos professores corresponde ao
+somatório da carga horária das disciplinas que um professor
+ministra em um semestre. Obter a maior lotação no semestre 2 do
+ano 2021.
+
+SELECT MAX (LOTAÇÃO) 
+FROM
+(SELECT SUM (DIS_CARGA_HORARIA)AS LOTAÇÃO, PRO_NOME
+FROM tbProfessor AS P JOIN tbOfertaDisciplina OD
+ON P.PRO_CODIGO = OD.PRO_CODIGO
+JOIN
+tbDisciplina AS D
+ON OD.DIS_CODIGO = D.DIS_CODIGO
+WHERE ODI_SEMESTRE = 2 AND ODI_ANO = 2014
+GROUP BY PRO_NOME) AS T
+
+POR MEIO DE UMA VISÃO FICA:  
+
+CREATE VIEW VWLOTAÇÃOPROFESSOR
+AS
+SELECT SUM (DIS_CARGA_HORARIA)AS LOTAÇÃO, PRO_NOME
+FROM tbProfessor AS P JOIN tbOfertaDisciplina OD
+ON P.PRO_CODIGO = OD.PRO_CODIGO
+JOIN
+tbDisciplina AS D
+ON OD.DIS_CODIGO = D.DIS_CODIGO
+WHERE ODI_SEMESTRE = 2 AND ODI_ANO = 2014
+GROUP BY PRO_NOME
+
+SELECT * FROM VWLOTAÇÃOPROFESSOR
+
+SELECT *
+FROM VWLOTAÇÃOPROFESSOR
+WHERE  LOTAÇÃO = (SELECT MAX(LOTAÇÃO) FROM VWLOTAÇÃOPROFESSOR)

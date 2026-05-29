@@ -1,0 +1,10 @@
+*.csv
+__pycache__/
+*.pyc
+venv/
+
+redes-neurais/X_train.csv
+redes-neurais/X_test.csv
+redes-neurais/y_train.csv
+redes-neurais/y_test.csv
+*.csv

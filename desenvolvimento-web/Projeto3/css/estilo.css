@@ -1,0 +1,27 @@
+#home {
+	background: #b19cd9;
+	color: white;
+}
+
+.caixa {
+	padding: 60px 0;
+	border-bottom: 1px solid #9400d3;
+}
+
+footer p a {
+	margin: 5px 15px;
+}
+.bg-white {
+	background-color: white !important;
+}
+.btn-outline-purple {
+	color: purple;
+	border-color: purple;
+}
+
+.btn-outline-purple:hover {
+	color: white;
+	background-color: purple;
+	border-color: purple;
+}
+

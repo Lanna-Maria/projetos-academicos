@@ -1,0 +1,49 @@
+﻿use SistemaAcademicoBCC
+
+→ Obter o nome do curso, a quantidade de disciplinas do curso e
+a quantidade de alunos do curso.
+
+SELECT CUR_NOME,
+(SELECT COUNT(*) QTDEDISCIPLINAS 
+FROM tbDisciplina 
+WHERE CUR_CODIGO = C.CUR_CODIGO) AS QTDE_DISCIPLINAS,
+(SELECT COUNT(*) QTDEALUNOS
+FROM tbAluno
+WHERE CUR_CODIGO = C.CUR_CODIGO) AS QTDE_ALUNOS
+FROM TBCURSO AS C
+
+→ Obter o nome do curso, a carga horária e a maior carga horária
+do nível do curso.
+
+SELECT CUR_NOME, CUR_CARGA_HORARIA,
+(SELECT MAX (CUR_CARGA_HORARIA)
+FROM tbCurso
+WHERE CUR_NIVEL = C.CUR_NIVEL ) MAIORCARGAHORARIA
+FROM tbCurso AS C
+
+→ Obter o nome do professor, a lotação no semestre 2 do ano
+2021 e o percentual da lotação do professor em relação a lotação
+total no referido semestre.
+
+SELECT PRO_NOME,SUM (DIS_CARGA_HORARIA) LOTAÇÃO,
+CONVERT (DECIMAL(5,1), SUM(DIS_CARGA_HORARIA)) / (SELECT LOTAÇÃO FROM VWLOTACAOSEMESTRE) * 100 PERC_LOTAÇÃO
+FROM tbProfessor AS P JOIN tbOfertaDisciplina AS OD
+ON P.PRO_CODIGO = OD.PRO_CODIGO
+JOIN 
+tbDisciplina AS D
+ON OD.DIS_CODIGO = D.DIS_CODIGO
+WHERE  ODI_SEMESTRE = 2 AND ODI_ANO = 2014
+GROUP BY PRO_NOME
+
+VISAO PARA SABER A LOTAÇÃO TOTAL DE CADA PROFESSOR POR DISCIPLINA
+
+CREATE VIEW VWLOTACAOSEMESTRE
+AS
+SELECT SUM (DIS_CARGA_HORARIA) LOTAÇÃO
+FROM tbProfessor AS P JOIN tbOfertaDisciplina AS OD
+ON P.PRO_CODIGO = OD.PRO_CODIGO
+JOIN 
+tbDisciplina AS D
+ON OD.DIS_CODIGO = D.DIS_CODIGO
+WHERE  ODI_SEMESTRE = 2 AND ODI_ANO = 2014
+
