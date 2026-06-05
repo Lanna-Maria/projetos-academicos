@@ -1,4 +1,4 @@
-# 🧮 Compilador de Expressões Aritméticas
+# 🧮 Compilador de Expressões Aritméticas com Interface Gráfica
 
 Este projeto foi desenvolvido por **Lanna** para a disciplina de **Compiladores**, do curso de **Bacharelado em Ciência da Computação**.
 
