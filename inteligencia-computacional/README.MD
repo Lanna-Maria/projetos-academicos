@@ -1,4 +1,4 @@
-# Agrupamento de Times por Nível de Desempenho
+# Sistema de Agrupamento de Times de League of Legends por Técnicas de Aprendizado Não Supervisionado
 
 Projeto desenvolvido na disciplina de Inteligência Computacional com o objetivo de aplicar técnicas de aprendizado não supervisionado para agrupar times de League of Legends com base em seu desempenho competitivo.
 O projeto utiliza o algoritmo K-Means para identificar padrões e similaridades entre equipes a partir de dados estatísticos.
